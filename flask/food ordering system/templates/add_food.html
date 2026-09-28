@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Food
+{% endblock %}
+
+
+{% block content %}
+
+<!-- <!doctype html>
+<html>
+  <head>
+    <title>Add Food</title>
+  </head>
+
+  <body> -->
+    <h1>Add New Food</h1>
+
+    <form method="POST">
+      <label>Food Name:</label>
+
+      <input type="text" name="food_name" />
+
+      <br /><br />
+
+      <label>Category:</label>
+
+      <input type="text" name="category" />
+
+      <br /><br />
+
+      <label>Price:</label>
+
+      <input type="number" name="price" />
+
+      <br /><br />
+
+      <label>Description:</label>
+
+      <input type="text" name="description" />
+
+      <br /><br />
+
+      <button type="submit">Add Food</button>
+    </form>
+  <!-- </body>
+</html> -->
+{% endblock %}

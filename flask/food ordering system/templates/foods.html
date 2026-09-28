@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}
+Food Menu
+{% endblock %}
+
+
+{% block content %}
+
+<!-- <!doctype html>
+<html>
+  <head>
+    <title>Food Menu</title>
+  </head>
+
+  <body> -->
+    <h1>Food Menu</h1>
+
+    <a href="/add">Add Food</a>
+
+    <br /><br />
+
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>Food Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+
+      {% for food in foods %}
+
+      <tr>
+        <td>{{ food[0] }}</td>
+
+        <td>{{ food[1] }}</td>
+
+        <td>{{ food[2] }}</td>
+
+        <td>₹{{ food[3] }}</td>
+
+        <td>{{ food[4] }}</td>
+
+        <td>
+          <a href="/edit/{{ food[0] }}">Edit</a>
+
+          |
+
+          <a href="/delete/{{ food[0] }}">Delete</a>
+        </td>
+      </tr>
+
+      {% endfor %}
+    </table>
+  <!-- </body>
+</html> -->
+{% endblock %}

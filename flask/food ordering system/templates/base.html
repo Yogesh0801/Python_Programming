@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{% block title %} Food Ordering System {% endblock %}</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="{{ url_for('foods') }}"> Home </a>
+
+      |
+
+      <a href="{{ url_for('add_food') }}"> Add Food </a>
+    </nav>
+
+    <hr />
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <hr />
+
+    <footer>
+      <p>Food Ordering System</p>
+    </footer>
+  </body>
+</html>
