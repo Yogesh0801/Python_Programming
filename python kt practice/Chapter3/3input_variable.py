@@ -1,0 +1,11 @@
+# b = input("Enter a number:")
+# c = input("Enter another number:")
+# print(b)
+# print(type(b))
+# print(b+c)
+# x = int(input("Enter a number:"))
+# print("the value that you are given is:", x)
+# print(type(x))
+
+f = float(input("Enter a number:"))
+print("the value that you are given is:", f)
